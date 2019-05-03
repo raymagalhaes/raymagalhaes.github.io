@@ -1,7 +1,7 @@
 body {
-   background: #FFF;
+   background: linear-gradient(90deg, #d500ff, #9C27B0);
 }
 h1 {
    font: 30px sans-serif;
-   color: #999;
+   color: #FFF;
 }
