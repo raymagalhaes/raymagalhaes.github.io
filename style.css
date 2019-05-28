@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap');
 body {
-  background: linear-gradient(90deg, #72198e, #52198e);
+  background: #FFF;
+  font: 100 20px Roboto Mono;
 }
 h1 {
-  font: 30px Roboto;
-  color: #FFF;
+  font: 100 30px Roboto Mono;
+  color: #666;
+}
+h2 {
+  font: 100 22px Roboto Mono;
+  color: #22a4bb;
+}
+.codigo {
+  color: #1334ea;
 }
