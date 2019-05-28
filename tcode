@@ -2,10 +2,10 @@
 for file in /a/raw/*.mkv;
   do name=`echo $file | cut -d'.' -f1`;
   echo $name;
-  ffmpeg -i "$file" -t 30 -c:v libx264 -preset faster -crf 24 -c:a libfdk_aac -profile:a aac_he_v2 -b:a 32k "${name}_720p.mkv"
+  ffmpeg -i "$file" -c:v libx264 -preset faster -crf 24 -c:a libfdk_aac -profile:a aac_he_v2 -b:a 32k "${name}_720p.mkv"
 done
 for file in /a/raw/*.mkv;
   do name=`echo $file | cut -d'.' -f1`;
   echo $name;
-  ffmpeg -i "$file" -s hd480 -t 30 -c:v libx264 -preset faster -crf 24 -c:a libfdk_aac -profile:a aac_he_v2 -b:a 32k "${name}_480p.mkv"
+  ffmpeg -i "$file" -s hd480 -c:v libx264 -preset faster -crf 24 -c:a libfdk_aac -profile:a aac_he_v2 -b:a 32k "${name}_480p.mkv"
 done
