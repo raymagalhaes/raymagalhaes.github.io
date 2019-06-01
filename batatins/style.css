@@ -2,7 +2,6 @@
 body {
   margin: 0;
   padding: 0;
-  background: #4dffc1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,24 +12,27 @@ body {
   width: 500px;
   padding: 20px;
   border-radius: 10px;
-  background: #FFF;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 .massinhaTitle {
-  font: bold 20px Roboto;
+  font: 100 23px Roboto;
   padding: 0 0 20px 0;
   margin: 0;
   color: #ad00ff;
 }
 .cfileLabel {
   display: inline-block;
-  padding: 10px;
-  background: #0aa54b;
+  padding: 20px;
   margin-bottom: 20px;
   border-radius: 6px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid #0aa54b;
   cursor: pointer;
-  font: bold 14px Roboto;
+  font: bold 15px Roboto;
+  color: #0aa54b;
+  transition: .2s;
+}
+.cfileLabel:hover {
+  background: #0aa54b;
+  border: 2px solid #0aa54b;
   color: #FFF;
 }
 .configInput {

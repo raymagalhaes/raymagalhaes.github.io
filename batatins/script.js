@@ -9,8 +9,6 @@ document.querySelectorAll(".configInput")[0].onchange = function() {
       if (
         lines[i].includes("TEXTUREGROUP_") &&
         !lines[i].includes("TEXTUREGROUP_UIStreamable") &&
-        !lines[i].includes("TEXTUREGROUP_Effects=") &&
-        !lines[i].includes("TEXTUREGROUP_EffectsNotFiltered=") &&
         !lines[i].includes("TEXTUREGROUP_TitleScreenPreview")
       ) {
         let batatada = lines[i].replace(/[1-9]\d*/g, "1");
